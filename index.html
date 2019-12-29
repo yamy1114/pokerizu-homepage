@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<head>
+
+<title>ポケリズ - Pocket Rhythm 公式サイト</title>
+
+<!-- twitter card settings -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@pokerizu" />
+<meta name="twitter:title" content="ポケリズ（Androidアプリ）" />
+<meta name="twitter:description" content="有名なコンポーザーの楽曲で遊べる簡単操作のリズムゲーム！Google Playにて配信中！" />
+<meta name="twitter:image" content="http://yamy-works.com/pokerizu/img/twitter_card.png" />
+<meta name="twitter:url" content="http://yamy-works.com/pokerizu/" />
+
+<!-- ogp settings -->
+<meta property="fb:admins" content="100013730567646" />
+<meta property="og:title" content="ポケリズ（Androidアプリ）" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="BMSなどで有名なコンポーザーの楽曲で遊べる簡単操作のリズムゲーム！現在の収録曲数は68曲！２つの難易度でリズムゲーム（音ゲー）が初めての人でも得意な人でも楽しめます！Google Playにて配信中！https://play.google.com/store/apps/details?id=jp.yamy.pokerizu&hl=ja">
+<meta property="og:image" content="http://yamy-works.com/pokerizu/img/twitter_card.png" />
+<meta charset="UTF-8">
+
+<!--Import Google Icon Font-->
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Import *.css-->
+<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+<link type="text/css" rel="stylesheet" href="css/main.css"/>
+<link type="text/css" rel="stylesheet" href="css/hover-min.css">
+<link type="text/css" rel="stylesheet" href="css/lightbox.min.css">
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!-- favicon setting -->
+<link rel="shortcut icon" href="./favicon.png">
+
+</head>
+<body class="grey lighten-4 grey-text text-darken-2">
+<!-- setting for facebook -->
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+ var js, fjs = d.getElementsByTagName(s)[0];
+ if (d.getElementById(id)) return;
+ js = d.createElement(s); js.id = id;
+ js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.8";
+ fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- header -->
+<div class="grey darken-3 z-depth-2 header">
+	<div class="container">
+		<div class="logo">
+			<i class="material-icons white-text logo-gear hide-on-small-only">settings</i>
+			<b class="white-text logo-text">Pocket Rhythm</b>
+			<i class="material-icons white-text logo-gear hide-on-small-only">settings</i>
+		</div>
+		<div class="header-sns right">
+			<a><img src="img/twitter_logo.png" alt="" class="logo_twitter"></a>
+			<a><img src="img/facebook_logo.png" alt="" class="logo_facebook"></a>
+		</div>
+	</div>
+</div>
+
+<!-- language -->
+<div class="translate-area">
+	<div class="btn-floating btn-large btn-translate right grey darken-3 z-index-2"><i class="material-icons">language</i></div><br>
+	<div class="btn btn-lang right white grey-text text-darken-3">日本語</div><br>
+	<div class="btn btn-lang right white grey-text text-darken-3">English</div><br>
+</div>
+
+<!-- eyecatch -->
+<div class="eyecatch">
+	<div class="container">
+		<br><br><br><br>
+		<div class="row">
+			<div class="col s12 offset-m2 m8 l6 center">
+				<img class="ja" src="img/eyecatch_text.png" alt="" style="width:90%">
+				<img class="en" src="img/eyecatch_text_en.png" alt="" style="width:90%">
+				<br><br>
+				<a href="https://play.google.com/store/apps/details?id=jp.yamy.pokerizu&hl=ja"><img src="img/google_play_badge.png" alt="" class="waves-effect"></a>
+				<br><br>
+			</div>
+			<div class="col s12 offset-m2 m8 l6 center">
+				<img src="img/eyecatch_phone.png" alt="" class="resposive-img" style="width:100%">
+			</div>
+		</div>
+		<br><br>
+	</div>
+</div>
+<br>
+
+<!-- what is ? -->
+<div class="container center">
+	<h5 class="ja grey-text text-darken-2">どんなゲーム？</h5>
+	<h5 class="en grey-text text-darken-2">What Game ？</h5>
+	<div class="white white-area center">
+		<img src="img/finger.png" alt="" style="height:60px" class="hvr-wobble-horizontal">
+		<br>
+		<b class="ja">指一本でできるシンプルなリズムゲーム！</b>
+		<b class="en">Simple rhythm game that can be played in one finger !</b>
+		<br><br>
+		<div class="row">
+			<div class="col s12 m12 l6 center">
+				<span class="ja">４つのレーンから曲に合わせて３種類のノートが流れてきます！</span>
+				<span class="en">3 types of notes move from left on one of the four line to the music !</span>
+				<br><br>
+				<div class="row">
+					<div class="col s4 offset-m3 m2 offset-l3 l2">
+						<img src="img/tap_note.png" alt="" style="height:30px" class="hvr-pop"><br>
+						<span class="ja">タップ</span>
+						<span class="en">tap</span>
+					</div>
+					<div class="col s4 m2 l2">
+						<img src="img/flic_note.png" alt="" style="height:30px" class="hvr-pop"><br>
+						<span class="ja">フリック</span>
+						<span class="en">flick</span>
+					</div>
+					<div class="col s4 m2 l2">
+						<img src="img/hold_note1.png" alt="" style="height:30px" class="hvr-pop"><br>
+						<span class="ja">ホールド</span>
+						<span class="en">hold</span>
+					</div>
+				</div>
+				<span class="ja">
+				ノートが灰色のサークルに重なったときに<br>
+				タイミングよくサークルをタップ・フリック・ホールドすることで<br>
+				スコアがどんどん増えていきます！<br><br>
+				どれだけミスをしてもゲームオーバーにはならないので<br>
+				最後まで楽しくプレイすることが出来ます！<br><br>
+				</span>
+				<span class="en">
+				You can get a score by timely tapping or flicking or holding the grey circle,<br>
+				when a moving note overlaps with a grey circle.<br><br>
+				You can enjoy playing to the end of a song,<br>
+				because playing does not finish in the middle however many you miss notes.<br><br>
+				</span>
+			</div>
+			<div class="col s12 m12 l6 center">
+				<video src="video/demo1.mp4" controls autoplay loop muted style="width:450px; max-width:100%" class="hide-on-small-only"></video>
+				<video src="video/demo1.mp4" controls autoplay loop muted style="width:100%" class="hide-on-med-and-up"></video>
+				<br>
+				<span class="ja">▲デモ動画（音は出ません）</span>
+				<span class="en">▲demo movie（no sounds）</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m6 l4">
+				<a href="img/ss4.png" data-lightbox="ss"><img src="img/ss4.png" alt="" style="width:100%"></a>
+				<span class="ja">▲楽曲選択画面</span>
+				<span class="en">▲song select screen</span>
+			</div>
+			<div class="col s12 m6 l4">
+				<a href="img/ss5.png" data-lightbox="ss"><img src="img/ss5.png" alt="" style="width:100%"></a>
+				<span class="ja">▲演奏画面</span>
+				<span class="en">▲play screen</span>
+			</div>
+			<div class="col s12 offset-m3 m6 l4">
+				<a href="img/ss6.png" data-lightbox="ss"><img src="img/ss6.png" alt="" style="width:100%"></a>
+				<span class="ja">▲リザルト画面</span>
+				<span class="en">▲result screen</span>
+			</div>
+		</div>
+	</div>
+</div>
+<br>
+
+<!-- appeal -->
+<div class="container center">
+	<h5 class="ja grey-text text-darken-2">ココがおすすめ！</h5>
+	<h5 class="en grey-text text-darken-2">Reccomended Point ！</h5>
+	<div class="row" style="margin-bottom:0px">
+		<div class="col s12 m6 l4">
+			<div class="white white-area center">
+				<img src="img/appeal_composer.png" alt="" style="height:120px" class="hvr-wobble-horizontal">
+				<p>
+				<b class="ja">ハイクオリティな楽曲！<br></b>
+				<b class="en">high-quolity songs !<br></b>
+				<span class="ja">ゲームセンターにおいてある某リズムゲームに楽曲を提供しているような有名なコンポーザー様の楽曲で遊べます！</span>
+				<span class="en">You can play many songs made by Japanese famous composers in game music field !</span>
+				</p>
+			</div>
+			<br>
+		</div>
+		<div class="col s12 m6 l4">
+			<div class="white white-area center">
+				<img src="img/appeal_free.png" alt="" style="height:120px" class="hvr-wobble-horizontal">
+				<p>
+				<b class="ja">完全無料！<br></b>
+				<b class="en">completely free !<br></b>
+				<span class="ja">収録されている68曲全てが無料で遊べます！ダウンロードやプレイには一切お金がかかりません！</span>
+				<span class="en">You can play all of 68 songs for free ! You don't need pay money for playing and downloading !</span>
+				</p>
+			</div>
+			<br>
+		</div>
+		<div class="col s12 offset-m3 m6 l4">
+			<div class="white white-area center">
+				<img src="img/appeal_nocom.png" alt="" style="height:120px" class="hvr-wobble-horizontal">
+				<p>
+				<b class="ja">通信を行いません！<br></b>
+				<b class="en">playable without communication<br></b>
+				<span class="ja">追加ファイルのダウンロード以外には通信を行わないのでいつでもどこでも気軽に楽しむことが出来ます！</span>
+				<span class="en">You can casually enjoy playing everywhere because this app does not communicate except when downloading extend file !</span>
+				</p>
+			</div>
+			<br>
+		</div>
+	</div>
+	<div class="white white-area center">
+		<b class="ja">便利な機能がいっぱい！<br></b>
+		<b class="en">many useful functions !<br></b>
+		<div class="row">
+			<div class="hide-on-med-and-down col l2 center">
+				<!--	<i class="material-icons large grey-text">settings</i> -->
+			</div>
+			<div class="ja col s12 m6 l4">
+				ノートの流れる速度の調節機能<br>
+				左利きの人へ向けた左右反転機能<br>
+				楽曲と譜面の微妙なずれの調節機能<br>
+				フリック無しでプレイできる機能<br>
+				アプリの起動がとても早い
+			</div>
+			<div class="en col s12 m6 l4">
+				changeble note's moving speed<br>
+				flip horizontal screen mode<br>
+				calibration<br>
+				no flick note mode<br>
+				App runs quickly
+			</div>
+			<div class="ja col s12 m6 l4">
+				データのクラウド保存機能<br>
+				スコアを競い合えるランキング機能<br>
+				スコアや称号を一度に確認できる機能<br>
+				実力に合わせて選べる２つの難易度<br>
+				リザルトをtwitterにつぶやく機能
+			</div>
+			<div class="en col s12 m6 l4">
+				cloud score backup<br>
+				online ranking<br>
+				showing score list<br>
+				two difficulty(easy and hard)<br>
+				post score tweet
+			</div>
+			<div class="hide-on-med-and-down col l2 center">
+				<!-- <i class="material-icons large grey-text">settings</i> -->
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m6 l4">
+				<a href="img/ss1.png" data-lightbox="ss"><img src="img/ss1.png" alt="" style="width:100%"></a>
+				<span class="ja">▲各種設定画面</span>
+				<span class="en">▲option screen</span>
+			</div>
+			<div class="col s12 m6 l4">
+				<a href="img/ss2.png" data-lightbox="ss"><img src="img/ss2.png" alt="" style="width:100%"></a>
+				<span class="ja">▲曲と譜面のずれの調整画面</span>
+				<span class="en">▲calibration screen</span>
+			</div>
+			<div class="col s12 offset-m3 m6 l4">
+				<a href="img/ss3.png" data-lightbox="ss"><img src="img/ss3.png" alt="" style="width:100%"></a>
+				<span class="ja">▲プレイデータの閲覧画面</span>
+				<span class="en">▲showing score list screen</span>
+			</div>
+		</div>
+	</div>
+</div>
+<br>
+
+<!-- playable songs -->
+<div class="container center">
+	<!--	<img src="img/h-shuroku.png" alt=""> -->
+	<h5 class="ja grey-text text-darken-2">プレイアブル楽曲</h5>
+	<h5 class="en grey-text text-darken-2">Playable Songs</h5>
+	<div class="white white-area">
+		<img src="img/animal_dance.png" alt="" class="resposive-img hvr-wobble-horizontal" style="height:100px">
+		<p class="ja">
+		遊べる楽曲は全部で78種類！<br>
+		どれも良い楽曲ばかりなのでお気に入りの楽曲が見つかるはずです！<br>
+		<br>
+		アプリのインストール時にはデフォルトの3曲しか入っていませんが<br>
+		無料の追加ダウンロードを行うことでより多くの楽曲で遊ぶことが出来ます！<br>
+		</p>
+		<p class="en">
+		There are 68 playable songs !<br>
+		You can find favorite songs because every song is very cool !<br>
+		<br>
+		This app includes 3 songs when you install this app,<br>
+		but you can play more songs by do free download !<br>
+		</p>
+		<dl class="acMenu">
+			<dt class="grey-text center"><i class="material-icons medium">expand_more</i></dt>
+			<dd>
+			<div class="row">
+				<div class="col s12 offset-m1 m10 l6">
+					<h6 class="ja"><b>デフォルト</b></h6>
+					<h6 class="en"><b>default</b></h6>
+					<table class="highlight centered">
+						<thead>
+							<tr>
+								<th class="ja">楽曲名</th>
+								<th class="en">song title</th>
+								<th class="ja">コンポーザー名</th>
+								<th class="en">composer name</th>
+							</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>Khronos</td>
+							<td>削除</td>
+						</tr>
+						<tr>
+							<td>Fading Star</td>
+							<td>ginkiha</td>
+						</tr>
+						<tr>
+							<td>TRIP!! TRIP!!</td>
+							<td>Shiron</td>
+						</tr>
+						</tbody>
+					</table>
+					<br>
+					<h6 class="ja"><b>追加楽曲１</b></h6>
+					<h6 class="en"><b>additional songs 1</b></h6>
+					<table class="highlight centered">
+						<thead>
+							<tr>
+								<th class="ja">楽曲名</th>
+								<th class="en">song title</th>
+								<th class="ja">コンポーザー名</th>
+								<th class="en">composer name</th>
+							</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>NeoCRISIS</td>
+							<td>BlackY</td>
+						</tr>
+						<tr>
+							<td>SilverWhite Cube</td>
+							<td>KV</td>
+						</tr>
+						<tr>
+							<td>BABYLON</td>
+							<td>BlackY</td>
+						</tr>
+						<tr>
+							<td>glacial world</td>
+							<td>wa. vs 44teru-k</td>
+						</tr>
+						<tr>
+							<td>Valedict</td>
+							<td>void</td>
+						</tr>
+						<tr>
+							<td>Lapis</td>
+							<td>SHIKI</td>
+						</tr>
+						<tr>
+							<td>Pure Ruby</td>
+							<td>SHIKI</td>
+						</tr>
+						<tr>
+							<td>Lamion</td>
+							<td>島白</td>
+						</tr>
+						<tr>
+							<td>COSMOS</td>
+							<td>BlackY</td>
+						</tr>
+						<tr>
+							<td>ドリームグライダー</td>
+							<td>Y.W</td>
+						</tr>
+						<tr>
+							<td>The Strategy of Emperor</td>
+							<td>KV</td>
+						</tr>
+						<tr>
+							<td>Vallista</td>
+							<td>削除</td>
+						</tr>
+						<tr>
+							<td>super ultra kuma boy</td>
+							<td>黒魔</td>
+						</tr>
+						<tr>
+							<td>Campanula</td>
+							<td>BlackY</td>
+						</tr>
+						<tr>
+							<td>Akasagarbha</td>
+							<td>wa. vs ETIA</td>
+						</tr>
+						<tr>
+							<td>Destined Marionette</td>
+							<td>ビートまりお</td>
+						</tr>
+						<tr>
+							<td>Infected Infinity</td>
+							<td>kamome sano vs wobble magic library</td>
+						</tr>
+						</tbody>
+					</table>
+					<br>
+					<h6 class="ja"><b>追加楽曲２</b></h6>
+					<h6 class="en"><b>additional songs 2</b></h6>
+					<table class="highlight centered">
+						<thead>
+							<tr>
+								<th class="ja">楽曲名</th>
+								<th class="en">song title</th>
+								<th class="ja">コンポーザー名</th>
+								<th class="en">composer name</th>
+							</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>rePrayer</td>
+							<td>Ym1024 feat lamie*</td>
+						</tr>
+						<tr>
+							<td>Harbor Light</td>
+							<td>MINES vs iF</td>
+						</tr>
+						<tr>
+							<td>The Island of Albatross</td>
+							<td>anubasu-anubasu</td>
+						</tr>
+						<tr>
+							<td>7 colors*</td>
+							<td>Ym1024 feat lamie*</td>
+						</tr>
+						<tr>
+							<td>Poppin' Shower</td>
+							<td>P*Light</td>
+						</tr>
+						<tr>
+							<td>Jack o' Lantern</td>
+							<td>anubasu-anubasu</td>
+						</tr>
+						<tr>
+							<td>DOCO DOCO BEAT</td>
+							<td>ヒゲドライバー</td>
+						</tr>
+						<tr>
+							<td>Calamity Fortune</td>
+							<td>ZUN remixed by LeaF</td>
+						</tr>
+						</tbody>
+					</table>
+					<br>
+					<h6 class="ja"><b>追加楽曲３</b></h6>
+					<h6 class="en"><b>additional songs 3</b></h6>
+					<table class="highlight centered">
+						<thead>
+							<tr>
+								<th class="ja">楽曲名</th>
+								<th class="en">song title</th>
+								<th class="ja">コンポーザー名</th>
+								<th class="en">composer name</th>
+							</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>elegante</td>
+							<td>Junk</td>
+						</tr>
+						<tr>
+							<td>ELECTRiCiTY</td>
+							<td>NIKITA</td>
+						</tr>
+						<tr>
+							<td>End Time</td>
+							<td>Cres.</td>
+						</tr>
+						<tr>
+							<td>Ocean Memory</td>
+							<td>Junk</td>
+						</tr>
+						<tr>
+							<td>Aeventyr</td>
+							<td>Rigel Theatre</td>
+						</tr>
+						<tr>
+							<td>夢、幻。</td>
+							<td>NIKITA</td>
+						</tr>
+						<tr>
+							<td>Kreuz</td>
+							<td>sky_delta</td>
+						</tr>
+						<tr>
+							<td>ERIS</td>
+							<td>Rigel Theatre</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col s12 offset-m1 m10 l6">
+					<h6 class="ja"><b>追加楽曲４</b></h6>
+					<h6 class="en"><b>additional songs 4</b></h6>
+					<table class="highlight centered">
+						<thead>
+							<tr>
+								<th class="ja">楽曲名</th>
+								<th class="en">song title</th>
+								<th class="ja">コンポーザー名</th>
+								<th class="en">composer name</th>
+							</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>The Five</td>
+							<td>Cranky</td>
+						</tr>
+						<tr>
+							<td>JULIAN</td>
+							<td>Cranky</td>
+						</tr>
+						<tr>
+							<td>MATADOR</td>
+							<td>Cranky</td>
+						</tr>
+						<tr>
+							<td>Luvin' You</td>
+							<td>Cranky</td>
+						</tr>
+						<tr>
+							<td>R176</td>
+							<td>Cranky</td>
+						</tr>
+						<tr>
+							<td>conflict</td>
+							<td>siromaru + cranky</td>
+						</tr>
+						</tbody>
+					</table>
+					<br>
+					<h6 class="ja"><b>追加楽曲５</b></h6>
+					<h6 class="en"><b>additional songs 5</b></h6>
+					<table class="highlight centered">
+						<thead>
+							<tr>
+								<th class="ja">楽曲名</th>
+								<th class="en">song title</th>
+								<th class="ja">コンポーザー名</th>
+								<th class="en">composer name</th>
+							</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>Altersist</td>
+							<td>void</td>
+						</tr>
+						<tr>
+							<td>桜火爛漫クレオパトラ</td>
+							<td>BlackY</td>
+						</tr>
+						<tr>
+							<td>Papyrus</td>
+							<td>orangentle</td>
+						</tr>
+						<tr>
+							<td>Caelumize</td>
+							<td>void</td>
+						</tr>
+						<tr>
+							<td>DESTINY</td>
+							<td>orangentle</td>
+						</tr>
+						<tr>
+							<td>HAELEQUIN</td>
+							<td>orangentle</td>
+						</tr>
+						<tr>
+							<td>Air</td>
+							<td>SHIKI</td>
+						</tr>
+						<tr>
+							<td>Mirage Impact</td>
+							<td>ZUN remixed by Arch</td>
+						</tr>
+						<tr>
+							<td>Ascension</td>
+							<td>BlackY</td>
+						</tr>
+						<tr>
+							<td>Evoltex</td>
+							<td>Arch</td>
+						</tr>
+						</tbody>
+					</table>
+					<br>
+					<h6 class="ja"><b>追加楽曲６</b></h6>
+					<h6 class="en"><b>additional songs 6</b></h6>
+					<table class="highlight centered">
+						<thead>
+							<tr>
+								<th class="ja">楽曲名</th>
+								<th class="en">song title</th>
+								<th class="ja">コンポーザー名</th>
+								<th class="en">composer name</th>
+							</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>風仁雷仁</td>
+							<td>カラフル・サウンズ・ポート</td>
+						</tr>
+						<tr>
+							<td>strawberry happiness</td>
+							<td>Ym1024 feat lamie*</td>
+						</tr>
+						<tr>
+							<td>holy night celebration</td>
+							<td>Ym1024 feat lamie*</td>
+						</tr>
+						<tr>
+							<td>ETERNAL DRAIN</td>
+							<td>カラフル・サウンズ・ポート</td>
+						</tr>
+						<tr>
+							<td>Sakura Fubuki</td>
+							<td>Street</td>
+						</tr>
+						<tr>
+							<td>Ice-Cold Emotion</td>
+							<td>Z-Siecle</td>
+						</tr>
+						<tr>
+							<td>オトゲラヴ！</td>
+							<td>ねこみりん feat.小宮真央×みゆ×えみゅう。</td>
+						</tr>
+						<tr>
+							<td>Dreamin' Attraction!!</td>
+							<td>翡乃イスカ</td>
+						</tr>
+						</tbody>
+					</table>
+					<br>
+					<h6 class="ja"><b>追加楽曲７</b></h6>
+					<h6 class="en"><b>additional songs 7</b></h6>
+					<table class="highlight centered">
+						<thead>
+							<tr>
+								<th class="ja">楽曲名</th>
+								<th class="en">song title</th>
+								<th class="ja">コンポーザー名</th>
+								<th class="en">composer name</th>
+							</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>Aqua drive</td>
+							<td>こふ</td>
+						</tr>
+						<tr>
+							<td>Arty Crafty</td>
+							<td>yaseta</td>
+						</tr>
+						<tr>
+							<td>メイルシュトローム</td>
+							<td>wa.</td>
+						</tr>
+						<tr>
+							<td>Ligleter</td>
+							<td>奏音</td>
+						</tr>
+						<tr>
+							<td>Eternity Sky</td>
+							<td>こふ</td>
+						</tr>
+						<tr>
+							<td>夏景色乃夢幻劇</td>
+							<td>ZUN remixed by pan</td>
+						</tr>
+						<tr>
+							<td>Flarebirds of Scarlet Prism</td>
+							<td>pan</td>
+						</tr>
+						<tr>
+							<td>FIND OUT</td>
+							<td>yaseta vs Hidra-Xjeil</td>
+						</tr>
+						</tbody>
+					</table>
+					<br>
+					<h6 class="ja"><b>追加楽曲８</b></h6>
+					<h6 class="en"><b>additional songs 8</b></h6>
+					<table class="highlight centered">
+						<thead>
+							<tr>
+								<th class="ja">楽曲名</th>
+								<th class="en">song title</th>
+								<th class="ja">コンポーザー名</th>
+								<th class="en">composer name</th>
+							</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>Funny Funky Freaky</td>
+							<td>mommy</td>
+						</tr>
+						<tr>
+							<td>Adamantite</td>
+							<td>Street vs Sin:cK</td>
+						</tr>
+						<tr>
+							<td>Precious!!!</td>
+							<td>mommy</td>
+						</tr>
+						<tr>
+							<td>IKAROS</td>
+							<td>ETIA. feat. Jenga</td>
+						</tr>
+						<tr>
+							<td>Alice in Misanthrope -厭世アリス-</td>
+							<td>LeaF</td>
+						</tr>
+						<tr>
+							<td>Load of the Ciel</td>
+							<td>sky_delta vs Street</td>
+						</tr>
+						<tr>
+							<td>Tsukuyomi</td>
+							<td>Lime</td>
+						</tr>
+						<tr>
+							<td>Claiomh Solais</td>
+							<td>ETIA.</td>
+						</tr>
+						<tr>
+							<td>Chronomia</td>
+							<td>Lime</td>
+						</tr>
+						<tr>
+							<td>EXA</td>
+							<td>DRIVE.</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			</dd>
+		</dl>
+	</div>
+</div>
+<br>
+
+<!-- article & twitter gadget -->
+<div>
+	<div class="container">
+		<div class="row">
+			<div class="col s12 l7 center">
+				<h5 class="ja grey-text text-darken-2">紹介記事</h5>
+				<h5 class="en grey-text text-darken-2">Introductory Article</h5>
+				<div class="white white-area article-area">
+					<div class="en">
+						Note: following article is Japanese website.<br><br>
+					</div>
+					<div>
+						<span class="ja">アプリゲット 様<br></span>
+						<span class="en">Appget<br></span>
+						<a href="http://appget.com/appli/view/64931/?guid=ON" target="blank_">http://appget.com/appli/view/64931/?guid=ON</a>
+					</div>
+					<br>
+					<div class="divider"></div>
+					<br>
+					<div>
+						<span class="ja">あんみつ速報 様<br></span>
+						<span class="en">Anmitsu Sokuhou<br></span>
+						<a href="http://anmitsu-sokuhou.com/app/%E6%9C%89%E5%90%8D%E4%BD%9C%E6%9B%B2%E8%80%85%E3%81%8C%E9%9B%86%E7%B5%90%E3%80%8E%E3%83%9D%E3%82%B1%E3%83%AA%E3%82%BA%E3%80%8F" target="blank_">http://anmitsu-sokuhou.com/app/有名作曲者が集結『ポケリズ』</a>
+					</div>
+					<br>
+					<div class="divider"></div>
+					<br>
+					<div>
+						<span class="ja">APPLION 様<br></span>
+						<span class="en">APPLION<br></span>
+						<a href="http://applion.jp/android/app/jp.yamy.pokerizu/" target="blank_">http://applion.jp/android/app/jp.yamy.pokerizu/</a>
+					</div>
+					<br>
+					<div class="divider"></div>
+					<br>
+					<div>
+						<span class="ja">トサカマニアックス 様<br></span>
+						<span class="en">TosakaManiakkusu<br></span>
+						<a href="http://blog.livedoor.jp/tosaka9021/archives/1018370046.html" target="blank_">http://blog.livedoor.jp/tosaka9021/archives/1018370046.html</a>
+					</div>
+					<br>
+					<div class="divider"></div>
+					<dl class="acMenu">
+						<dt class="grey-text center"><i class="material-icons medium">expand_more</i></dt>
+						<dd>
+						<div>
+							<span class="ja">Appliv 様<br></span>
+							<span class="en">Appliv<br></span>
+							<a href="http://android.app-liv.jp/001780635/" target="blank_">http://android.app-liv.jp/001780635/</a>
+						</div>
+						<br>
+						<div class="divider"></div>
+						<br>
+						<div>
+							<span class="ja">アンドロイダー 様<br></span>
+							<span class="en">Androider<br></span>
+							<a href="https://androider.jp/official/app/0f09e63521647b97/" target="blank_">https://androider.jp/official/app/0f09e63521647b97/</a>
+						</div>
+						<br>
+						<div class="divider"></div>
+						<br>
+						<div>
+							<span class="ja">放課後アプリ部 様<br></span>
+							<span class="en">Houkago App Club<br></span>
+							<a href="http://houkago-no.appspot.com/app_detail/4811277192921088" target="blank_">http://houkago-no.appspot.com/app_detail/4811277192921088</a>
+						</div>
+						<br>
+						<div class="divider"></div>
+						<br>
+						<div>
+							<span class="ja">AndroidView 様<br></span>
+							<span class="en">AndroidView<br></span>
+							<a href="http://androidview.jp/archives/10498" target="blank_">http://androidview.jp/archives/10498</a>
+						</div>
+						<br>
+						</dd>
+					</dl>
+				</div>
+				<br>
+			</div>
+			<div class="col s12 l5 center">
+				<h5 class="grey-text text-darken-2">TWITTER</h5>
+				<a class="twitter-timeline" data-height=500 href="https://twitter.com/pokerizu">Tweets by pokerizu</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="center">
+	<a><i class="material-icons grey-text large go-top-btn">expand_less</i></a>
+	<div class="grey-text" style="font-size:120%; padding-bottom:20px; margin-top:-20px"><b>TOP</b></div>
+</div>
+
+<!-- footer -->
+<div class="footer-top grey darken-3">
+	<div class="container white-text">
+		<div class="row">
+			<div class="col s12 m6 l4">
+				<h6 class="footer-h">
+					<i class="material-icons footer-info-gear">settings</i>
+					<span class="ja">　アプリ情報　</span>
+					<span class="en">　infomation　</span>
+					<i class="material-icons footer-info-gear">settings</i>
+				</h6>
+				<span class="ja">
+				タイトル：ポケリズ<br>
+				価格：完全無料<br>
+				ジャンル：リズムゲーム<br>
+				プラットフォーム：Androidアプリ<br>
+				公開日：2014年8月14日<br>
+				</span>
+				<span class="en">
+				title : Pocket Rhythm<br>
+				price : completely free<br>
+				genre : rhythm game<br>
+				platform : Android<br>
+				release : 14 Aug. 2014<br>
+				</span>
+			</div>
+			<div class="col s12 m6 l4">
+				<h6 class="footer-h">
+					<i class="material-icons footer-info-gear">settings</i>
+					　SNS　
+					<i class="material-icons footer-info-gear">settings</i>
+				</h6>
+				<!-- twitter tweet -->
+				<a href="https://twitter.com/share" class="twitter-share-button" data-text="簡単操作のリズムゲーム「ポケリズ」（Androidアプリ）" data-via="pokerizu" data-hashtags="pokerizu">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+				<!-- facebook good -->
+				<div class="fb-like" data-href="http://yamy-works.com/pokerizu/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
+				<!-- google +1 -->
+				<div class="g-plusone" data-size="medium"></div>
+				<br>
+				<!-- twitter follow -->
+				<a href="https://twitter.com/pokerizu" class="twitter-follow-button" data-show-count="false" style="padding:top:5px">Follow @pokerizu</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+			</div>
+			<div class="col s12 m6 l4">
+				<h6 class="footer-h">
+					<i class="material-icons footer-info-gear">settings</i>
+					<span class="ja">　コンタクト　</span>
+					<span class="en">　contact　</span>
+					<i class="material-icons footer-info-gear">settings</i>
+				</h6>
+				<span class="ja">メール：yamy1114p☆gmail.com（☆→@）<br></span>
+				<span class="en">mail : yamy1114p☆gmail.com(☆→@)<br></span>
+				<span class="ja">twitter：<a href="https://twitter.com/pokerizu">@pokerizu</a><br></span>
+				<span class="en">twitter : <a href="https://twitter.com/pokerizu">@pokerizu</a><br></span>
+				<br>
+			</div>	
+		</div>
+	</div>
+	<div class="footer-gear">
+	</div>
+</div>
+<div class="footer-bottom grey darken-4 center white-text">
+	copyright (c) 2016 yamy
+</div>
+
+<!-- loading javascript files-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/lightbox.min.js"></script>
+
+<!-- setting for google +1 -->
+<script src="https://apis.google.com/js/platform.js" async defer>
+{lang: 'ja'}
+</script>
+
+<!-- setting for google analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+   	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-86032949-1', 'auto');
+    ga('send', 'pageview');
+	
+</script>
+
+</body>
+</html>

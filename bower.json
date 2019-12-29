@@ -1,0 +1,20 @@
+{
+  "name": "pokerizu",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "materialize": "^0.97.7",
+    "hover": "Hover#^2.0.2",
+    "lightbox2": "lightbox#^2.8.2"
+  }
+}
